@@ -1,19 +1,47 @@
 import React from "react";
 import "./Home.css";
-import imageFile from "../images/imagefile.png";
+import Card from "./Card";
+import kapo from "../images/kapo.jpg";
+import soumo from "../images/soumo.jpg";
+import deba from "../images/deba.jpg";
+import sankha from "../images/sankha.jpg";
 const Home = () => {
-  const styles = {
-    backgroundColor: "yellow",
-  };
+  const data = [
+    {
+      id: 1,
+      name: "Kapataksha Biswas",
+      Company: "EY",
+      image: kapo,
+    },
+    {
+      id: 2,
+      name: "Soumajit Pramanick",
+      Company: "ITC Infotech",
+      image: soumo,
+    },
+    {
+      id: 3,
+      name: "Debanjali Kumar",
+      Company: "Capgemini",
+      image: deba,
+    },
+    {
+      id: 4,
+      name: "Sankhajit Roy",
+      Company: "Mindtree",
+      image: sankha,
+    },
+  ];
   return (
     <>
-      <div style={styles}>
-        <h2 className="heading">This our First Component</h2>
-        <p>How are you doing???</p>
-        <span>Before Break</span>
-        <br />
-        <span style={{ color: "green", fontSize: "20px" }}>After Break</span>
-        <img src={imageFile} alt="Sample" height={500} width={500} />
+      <div className="div-outer">
+        {data.map((item) => (
+          <Card
+            imageLink={item.image}
+            textHeading={item.name}
+            textPara={item.Company}
+          />
+        ))}
       </div>
     </>
   );
