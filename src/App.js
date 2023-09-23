@@ -6,6 +6,8 @@ import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import NotFound from "./pages/NotFound";
 import Endpoint from "./pages/Endpoint";
+import CompD from "./components/props/CompD";
+import CompA from "./components/context/CompA";
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +17,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/endpoint" element={<Endpoint />} />
+        <Route path="/comp" element={<CompD />} />
+        <Route path="/context" element={<CompA />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
