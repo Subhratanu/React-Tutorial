@@ -8,6 +8,8 @@ import NotFound from "./pages/NotFound";
 import Endpoint from "./pages/Endpoint";
 import CompD from "./components/props/CompD";
 import CompA from "./components/context/CompA";
+import Controlled from "./components/form/Controlled";
+import Uncontrolled from "./components/form/Uncontrolled";
 function App() {
   return (
     <BrowserRouter>
@@ -19,6 +21,8 @@ function App() {
         <Route path="/endpoint" element={<Endpoint />} />
         <Route path="/comp" element={<CompD />} />
         <Route path="/context" element={<CompA />} />
+        <Route path="/controlled-form" element={<Controlled />} />
+        <Route path="/uncontrolled-form" element={<Uncontrolled />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
