@@ -10,6 +10,7 @@ import CompD from "./components/props/CompD";
 import CompA from "./components/context/CompA";
 import Controlled from "./components/form/Controlled";
 import Uncontrolled from "./components/form/Uncontrolled";
+import Todo from "./Todo/Todo";
 function App() {
   return (
     <BrowserRouter>
@@ -23,6 +24,7 @@ function App() {
         <Route path="/context" element={<CompA />} />
         <Route path="/controlled-form" element={<Controlled />} />
         <Route path="/uncontrolled-form" element={<Uncontrolled />} />
+        <Route path="/todo" element={<Todo />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
