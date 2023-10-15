@@ -1,0 +1,8 @@
+1. If anything unmatched -> <h1>Search Item Not Found</h1>[Red color]
+
+2. Disable the case sensitive search ops
+
+3. Initial Loading render all items
+
+4. Add other filter options
+eg: filter by lastname & email as well
